@@ -11,11 +11,13 @@ const MenuCategory = ({ items, title, img }) => {
           <MenuItem key={item._id} item={item}></MenuItem>
         ))}
       </div>
-      <Link to={`/order/${title}`}>
-        <button className="flex mx-auto btn btn-outline border-0 border-b-4 border-b-[#1F2937] mt-4 text-black border-white">
-          Order Now
-        </button>
-      </Link>
+      {title && (
+        <Link to={`/order/${title}`}>
+          <button className="flex mx-auto btn btn-outline border-0 border-b-4 border-b-[#1F2937] mt-4 text-black border-white">
+            Order Now
+          </button>
+        </Link>
+      )}
     </div>
   );
 };
