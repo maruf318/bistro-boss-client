@@ -16,6 +16,7 @@ const Login = () => {
   const location = useLocation();
 
   const from = location.state?.from?.pathname || "/";
+  console.log("state in the location in login page", location.state);
 
   useEffect(() => {
     loadCaptchaEnginge(6);
@@ -41,7 +42,7 @@ const Login = () => {
         hideClass: {
           popup: `
             animate__animated
-            animate__fadeOutDown
+            animate__fadeOutDown 
             animate__faster
           `,
         },
@@ -116,12 +117,13 @@ const Login = () => {
                   onBlur={handleValidateCaptcha}
                   placeholder="Type the Captcha above"
                   className="input input-bordered"
-                  required
+                  // required
                 />
               </div>
               <div className="form-control mt-6">
+                {/* TODO: apply disabled for recaptcha */}
                 <input
-                  disabled={disabled}
+                  disabled={false}
                   className="btn btn-primary"
                   type="submit"
                   value="Login"
