@@ -19,7 +19,7 @@ const Dashboard = () => {
 
   //TODO: get isAdmin value from the database
   const [isAdmin] = useAdmin();
-  console.log(isAdmin);
+  // console.log(isAdmin);
 
   return (
     <div className="flex">
