@@ -1,8 +1,10 @@
-# React + Vite
+# Website Name: Bistro Boss Restaurant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website Link: https://bistro-boss-ba90d.web.app/
+Features:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Users can Order a food from the menu section
+- After payment, User can see the order details
+- Admin can check the orders and he has a separate dashboard
+- User have a separate dashboard and need to login to order.
+- Admin can add or update a item.
