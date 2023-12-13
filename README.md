@@ -1,7 +1,7 @@
 # Website Name: Bistro Boss Restaurant
 
 Website Link: https://bistro-boss-ba90d.web.app/
-Features:
+# Features:
 
 - Users can Order a food from the menu section
 - After payment, User can see the order details
